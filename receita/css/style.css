@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+    padding: 50px;
+}
+
+img {
+    width: 500px;
+}
