@@ -1,16 +1,94 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Outfit';
+    src: url("/font/Outfit-Light.ttf") format('TrueType');
+}
+
+:root {
+    --corFundo: #F3E5D8;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-main {
-    width: 700px;
-    margin: auto;
-    padding: 50px;
+body {
+    background-color: var(--corFundo);
+    margin: 100px;
 }
 
 img {
-    width: 500px;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 50px;
 }
+
+main {
+    width: 700px;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-family: 'Outfit';
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px;
+}
+
+p{ 
+    padding: 10px;
+    text-align: justify;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+#Preparation{
+    color: #633D4C;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#prepa {
+    background-color: #FFF6FB;
+    padding: 20px;
+    margin: 20px;
+}
+
+ul {
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.subtitle {
+    color:  #6C5245;
+}
+ #Ingredients {
+    padding-left: 45px;
+    line-height: 38px;
+ }
+
+ ol{
+    padding-left: 50px;
+ }
+
+ ol li{
+    padding: 10px;
+ }
+
+ hr {
+    color: #f9f9f946;
+ }
+
+ .nutri{
+    word-spacing: 300px;
+ }
