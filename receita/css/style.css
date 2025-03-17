@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Outfit';
-    src: url("/font/Outfit-Light.ttf") format('TrueType');
+    font-family: "Goudy";
+    src: url(/fonts/GoudyBookletter1911-Regular.ttf) format("truetype");
 }
+
+ @font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+ }
 
 :root {
     --corFundo: #F3E5D8;
+    --corFundoPreparation: #FFF8FC;
+    --corSmallSubtitle: #68384D;
+    --corSubtittle: #743E34;
+    --corFundoContainer: #FFFFFF;
+    --corExplicacao: #70706C;
 }
 
 * {
@@ -16,79 +26,124 @@
 
 body {
     background-color: var(--corFundo);
-    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-family: "Poppins", 'Courier New', Courier, monospace;
+    color: var(--corExplicacao);
+    background-color: var(--corFundoContainer);
+    width: 690px;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 100px 50px;
 }
 
 img {
-    width: 600px;
-    height: 300px;
     margin: auto;
-    padding: 40px;
-    border-radius: 50px;
+    width: 690px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
 }
 
-main {
-    width: 700px;
-    margin: auto;
-    background-color: #FFFFFF;
-    font-family: 'Outfit';
-    padding: 10px;
-    border-radius: 10px;
+#title {
+    font-family: "Goudy";
+    font-size: 2.5em;
+    color: #000000;
+    margin-top: 15px;
 }
 
-h1 {
-    font-size: 3em;
-    padding: 0px;
-    margin: 0px;
+.explication {
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 15px;
 }
 
-p{ 
-    padding: 10px;
-    text-align: justify;
+#smallsubtitle {
+    color: var(--corSmallSubtitle);
 }
 
-h1, h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
-}
-
-#Preparation{
-    color: #633D4C;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-#prepa {
-    background-color: #FFF6FB;
+#preparation {
+    background-color: var(--corFundoPreparation);
+    font-size: 0.9em;
+    margin-top: 30px;
     padding: 20px;
-    margin: 20px;
+    
 }
 
-ul {
-    line-height: 30px;
-    padding-left: 30px;
+ul li {
+    padding-left: 20px;
+    margin-left: 30px;
+    line-height: 35px;
 }
 
 .subtitle {
-    color:  #6C5245;
+    font-family: "Goudy";
+    color: var(--corSubtittle);
+    font-size: 1.8em;
+    margin-top: 35px;
 }
- #Ingredients {
-    padding-left: 45px;
-    line-height: 38px;
- }
 
- ol{
-    padding-left: 50px;
- }
+#ingredients {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.116);
+}
 
- ol li{
+.list {
+    margin-top: 10px;
+}
+
+#instructions {
+    margin-top: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.116);
+}
+
+.listord li{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.listord {
+    font-weight: normal;
+    font-size: 1em;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+ol li::marker{
+    color: var(--corSubtittle);
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+}
+
+th, td {
     padding: 10px;
- }
+    text-align: left; 
+    border-bottom: 1px solid #ddd;
+}
 
- hr {
-    color: #f9f9f946;
- }
+th {
+    background-color: #f5e1ef;
+    font-weight: bold;
+}
+ 
+tr:last-child td {
+    border-bottom: none;
+}
 
- .nutri{
-    word-spacing: 300px;
- }
+.data2 {
+    width: 45%;
+}
+
+.data {
+    color: var(--corSmallSubtitle);
+    font-weight: bold;
+}
