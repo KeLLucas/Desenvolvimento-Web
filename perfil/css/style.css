@@ -58,6 +58,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 0 px 1px 8px rgba(255, 255, 255, 0.192);
 }
 
 .botons {
@@ -75,6 +76,12 @@ body {
     margin-top: 15px;
     border: none;
     border-radius: 7px;
+}
+
+.social:hover {
+    cursor: pointer;
+    background-color: #555555;
+    border: solid 2px rgba(0, 0, 0, 0.74);
 }
 
 .social:last-child {
