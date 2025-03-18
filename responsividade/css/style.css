@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+   * {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+   }
+
+   body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   
+    header {
+        background-color: #49CFE1;
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        width: 100vw;
+    }
+
+    .conteudo {
+        background-color: #E05DA0;
+        height: 56vh;
+    }
+
+    .sidebar {
+        background-color: #E0D476;
+        height: 20vh;
+    }
+
+    aside {
+        background-color: #5DE05B;
+        width: 100vw;
+        height: 4vh;
+        margin-bottom: 1px;
+    }
+
+}
+
+ @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+       }
+    
+    body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    header {
+        background-color: #49CFE1;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        width: 100vw;
+    }
+
+    .conteudo {
+        background-color: #E05DA0;
+        height: 54vh;
+    }
+
+    .sidebar {
+        background-color: #E0D476;
+        height: 25.8vh;
+    }
+
+    .desketop {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parte23 {
+        display: flex;
+    }
+
+    aside {
+        width: 100vw;
+        background-color: #5DE05B;
+        height: 5vh;
+        margin-bottom: 1px;
+    }
+
+    aside:nth-child(1) {
+        margin-bottom: 1px;
+    }
+    aside:nth-child(2) {
+        margin-left: 1px;
+    }
+ }
+
+ @media screen and (min-width: 769px) and (orientation: landscape) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    header{
+        background-color: #49CFE1;
+        height: 10vh;
+    }
+
+    main {
+        width: 100vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo {
+        background-color: #E05DA0;
+        width: 70vw;
+    }
+
+    .sidebar {
+        background-color: #E0D476;
+        width: 30vw;
+    }
+
+    aside {
+        background-color: #5DE05B;
+    }
+
+    .desketop {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parte23 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside1 {
+        width: 30vw;
+        margin-right: 1px;
+    }
+    
+    .aside2 {
+        width: 40vw;
+        margin-right: 1px;
+    }
+
+    .aside3 {
+        width: 30vw;
+    }
+ }
