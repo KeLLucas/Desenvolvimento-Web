@@ -108,6 +108,66 @@
     }
  }
 
+ @media screen and (min-width: 769px) and (orientation: portrait) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    header{
+        background-color: #49CFE1;
+        height: 10vh;
+    }
+
+    main {
+        width: 100vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo {
+        background-color: #E05DA0;
+        width: 70vw;
+    }
+
+    .sidebar {
+        background-color: #E0D476;
+        width: 30vw;
+    }
+
+    aside {
+        background-color: #5DE05B;
+    }
+
+    .desketop {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parte23 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside1 {
+        width: 30vw;
+        margin-right: 1px;
+    }
+    
+    .aside2 {
+        width: 40vw;
+        margin-right: 1px;
+    }
+
+    .aside3 {
+        width: 30vw;
+    }
+ }
+
  @media screen and (min-width: 769px) and (orientation: landscape) {
     * {
         margin: 0px;
