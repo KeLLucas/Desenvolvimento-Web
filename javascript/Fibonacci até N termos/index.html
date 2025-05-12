@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência de Fibonacci</title>
+</head>
+<body>
+    <h1>Gerar Sequência de Fibonacci até N termos</h1>
+    
+    <label for="termos">Digite o número de termos (N):</label>
+    <input type="number" id="termos" name="termos" />
+    <button onclick="gerarFibonacci()">Gerar Fibonacci</button>
+    
+    <h2>Sequência de Fibonacci:</h2>
+    <p id="resultado"></p>
+
+    <script>
+        function gerarFibonacci() {
+            const n = parseInt(document.getElementById("termos").value);
+            const resultadoElement = document.getElementById("resultado");
+            
+            // Verificar se o número de termos é válido
+            if (isNaN(n) || n <= 0) {
+                resultadoElement.innerText = "Por favor, digite um número válido e maior que 0.";
+                return;
+            }
+
+            // Sequência de Fibonacci
+            let fibonacci = [0, 1];
+
+            for (let i = 2; i < n; i++) {
+                fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
+            }
+
+            // Exibir a sequência
+            resultadoElement.innerText = fibonacci.slice(0, n).join(', ');
+        }
+    </script>
+</body>
+</html>

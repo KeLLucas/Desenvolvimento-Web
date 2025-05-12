@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador Par ou Ímpar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calcular media de tres notas</h1>
+  <input type="number" id="nota1" placeholder="Digite a 1ª nota" />
+  <input type="number" id="nota2" placeholder="Digite a 2ª nota" />
+  <input type="number" id="nota3" placeholder="Digite a 3  ª nota" />
+  <button onclick="verificar()">Calcular</button>
+
+  <div id="resultado"></div>
+  <div id="resultado1"></div>
+
+  <script>
+    function verificar() {
+      const nota1 = parseFloat(document.getElementById("nota1").value);
+      const nota2 = parseFloat(document.getElementById("nota2").value);
+      const nota3 = parseFloat(document.getElementById("nota3").value);
+      const resultado = document.getElementById("resultado");
+      const resultado1 = document.getElementById("resultado1");
+
+      if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+        resultado.textContent = "Por favor, digite um número válido.";
+        return;
+      } 
+
+      if((nota1 + nota2 + nota3)/ 3 < 6) {
+        resultado.textContent = "Aluno Reprovado"
+      }else{
+        resultado.textContent = "Aluno Aprovado"
+      }
+        resultado1.textContent = `A média é igual a ${(nota1 + nota2 + nota3) / 3}`;
+    }
+  </script>
+</body>
+</html>
+
